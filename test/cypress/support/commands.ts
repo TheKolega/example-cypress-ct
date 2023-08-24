@@ -37,9 +37,13 @@
 // }
 
 // import { mount as mountAngular } from "cypress/angular"
+
+// see: https://github.com/redfox-mx/cypress-lit
 import { mount as mountLit } from "cypress-ct-lit"
+// see: https://on.cypress.io/mounting-react
 import { mount as mountReact } from "cypress/react18"
 import { mount as mountSvelte } from "cypress/svelte"
+// see: https://on.cypress.io/mounting-vue
 import { mount as mountVue } from "cypress/vue"
 
 // Augment the Cypress namespace to include type definitions for
@@ -63,6 +67,3 @@ Cypress.Commands.add("mountLit", mountLit)
 Cypress.Commands.add("mountReact", mountReact)
 Cypress.Commands.add("mountSvelte", mountSvelte)
 Cypress.Commands.add("mountVue", mountVue)
-
-// Example use:
-// cy.mount(MyComponent)
