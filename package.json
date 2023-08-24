@@ -4,6 +4,7 @@
   "scripts": {
     "cy:open": "cd test && pnpm i && pnpm cypress open --component --browser=chrome",
     "cy:run": "cd test && pnpm i && pnpm cypress run --component --browser=chrome",
+    "test-all": "pnpm test-lit; pnpm test-react; pnpm test-vue",
     "test-angular-open": "pnpm cy:open --config-file=cypress.angular.config.ts",
     "test-angular": "pnpm cy:run --config-file=cypress.angular.config.ts",
     "test-lit-open": "pnpm cy:open --config-file=cypress.lit.config.ts",
