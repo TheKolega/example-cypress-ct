@@ -1,0 +1,31 @@
+{
+  "name": "example-cypress-ct",
+  "private": true,
+  "scripts": {
+    "cy:open": "cd test && pnpm i && pnpm cypress open --component --browser=chrome",
+    "cy:run": "cd test && pnpm i && pnpm cypress run --component --browser=chrome",
+    "test-angular-open": "pnpm cy:open --config-file=cypress.angular.config.ts",
+    "test-angular": "pnpm cy:run --config-file=cypress.angular.config.ts",
+    "test-lit-open": "pnpm cy:open --config-file=cypress.lit.config.ts",
+    "test-lit": "pnpm cy:run --config-file=cypress.lit.config.ts",
+    "test-react-open": "pnpm cy:open --config-file=cypress.react.config.ts",
+    "test-react": "pnpm cy:run --config-file=cypress.react.config.ts",
+    "test-svelte-open": "pnpm cy:open --config-file=cypress.svelte.config.ts",
+    "test-svelte": "pnpm cy:run --config-file=cypress.svelte.config.ts",
+    "test-vue-open": "pnpm cy:open --config-file=cypress.vue.config.ts",
+    "test-vue": "pnpm cy:run --config-file=cypress.vue.config.ts"
+  },
+  "packageManager": "pnpm@8.6.12",
+  "author": "milos.jov.rs@gmail.com",
+  "license": "MIT",
+  "devDependencies": {
+    "lit": "^2.8.0",
+    "lodash-es": "^4.17.21",
+    "prettier": "^3.0.2",
+    "react": "^18.2.0",
+    "styled-components": "^6.0.7",
+    "svelte": "^4.2.0",
+    "vue": "^3.3.4",
+    "zone.js": "^0.13.1"
+  }
+}
