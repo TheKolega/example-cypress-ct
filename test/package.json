@@ -1,0 +1,18 @@
+{
+  "name": "test",
+  "private": true,
+  "devDependencies": {
+    "@cypress/grep": "^3.1.5",
+    "@sveltejs/vite-plugin-svelte": "^2.4.5",
+    "@types/node": "^20.5.4",
+    "@vitejs/plugin-react": "^4.0.4",
+    "@vitejs/plugin-vue": "^4.3.3",
+    "cypress-ct-lit": "^0.3.3",
+    "cypress-lit": "^0.0.8",
+    "cypress-plugin-xhr-toggle": "^1.0.0",
+    "cypress": "^12.17.4",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.1.6",
+    "vite": "^4.4.9"
+  }
+}
