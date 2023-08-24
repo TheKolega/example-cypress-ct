@@ -1,22 +1,13 @@
 {
+  "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "allowJs": true,
     "baseUrl": "../",
-    "esModuleInterop": true,
-    "lib": ["ES2022", "DOM"],
-    "module": "ES2022",
-    "moduleResolution": "Node",
-    "noEmit": true,
     "paths": {
       "@fws/*": ["../frameworks/*"]
     },
-    "resolveJsonModule": true,
-    "strict": true,
-    "target": "ES2022",
-    "types": ["cypress-ct-lit", "cypress", "lit", "node", "svelte", "vite", "vue"],
-    "useDefineForClassFields": true
+    "types": ["cypress-ct-lit", "cypress", "lit", "node", "svelte", "vite", "vue"]
   },
-  "include": ["**/*.*", "../frameworks/**/*.*"],
+  "include": ["**/*.*"],
   "references": [
     {
       "path": "./tsconfig.node.json"
