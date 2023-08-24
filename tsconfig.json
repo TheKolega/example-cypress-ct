@@ -12,7 +12,8 @@
     },
     "resolveJsonModule": true,
     "strict": true,
-    "target": "ES2022"
+    "target": "ES2022",
+    "types": ["lit", "svelte", "vue"]
   },
   "include": ["./**/*.*"]
 }

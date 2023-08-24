@@ -36,12 +36,13 @@
 //   }
 // }
 
+// // see: https://on.cypress.io/mounting-angular
 // import { mount as mountAngular } from "cypress/angular"
-
 // see: https://github.com/redfox-mx/cypress-lit
 import { mount as mountLit } from "cypress-ct-lit"
 // see: https://on.cypress.io/mounting-react
 import { mount as mountReact } from "cypress/react18"
+// see: https://on.cypress.io/mounting-svelte
 import { mount as mountSvelte } from "cypress/svelte"
 // see: https://on.cypress.io/mounting-vue
 import { mount as mountVue } from "cypress/vue"
