@@ -2,12 +2,9 @@
   "extends": "../../tsconfig.json",
   "compilerOptions": {
     "baseUrl": "../",
-    "paths": {
-      "@fws/*": ["../frameworks/*"]
-    },
-    "types": ["cypress-ct-lit", "cypress", "lit", "node", "svelte", "vite", "vue"]
+    "types": ["cypress-ct-lit", "cypress-real-events", "cypress", "lit", "node", "svelte", "vite", "vue"]
   },
-  "include": ["**/*.*"],
+  "include": ["./**/*.*", "../node_modules/cypress/**/*.*"],
   "references": [
     {
       "path": "./tsconfig.node.json"

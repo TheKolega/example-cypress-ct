@@ -1,4 +1,4 @@
-// import { svelte } from "@sveltejs/vite-plugin-svelte"
+import { svelte } from "@sveltejs/vite-plugin-svelte"
 import react from "@vitejs/plugin-react"
 import vue from "@vitejs/plugin-vue"
 import path from "path"
@@ -6,11 +6,7 @@ import { defineConfig } from "vite"
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [
-    react(),
-    // svelte(),
-    vue()
-  ],
+  plugins: [react(), svelte(), vue()],
   server: {
     fs: {
       // Allow serving files from the project root
